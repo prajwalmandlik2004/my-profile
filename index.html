@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'baloo bhaiyya', sans-serif;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            /* background: linear-gradient(to right bottom, #8cc8fe, #5cb2fd); */
+            background: white;
+        }
+
+        #profile-card {
+            position: relative;
+            padding: 50px;
+            border-radius: 3px;
+            /* background: linear-gradient(to top, white, rgb(138, 53, 223)); */
+            background : blueviolet;
+            /* background:rgb(138, 53, 223); */
+            /* border :5px solid rgb(128, 0, 255); */
+            /* background: linear-gradient(to right bottom,
+                    rgba(255, 255, 255, 0.6),
+                    rgba(255, 255, 255, 0.2)); */
+        }
+
+        .profile-image {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .profile-image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgb(142, 75, 242);
+        }
+
+        .profile-image::before {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            content: '';
+            bottom: 5px;
+            right: 10px;
+            border: 3px solid;
+            background: #90ee02;
+        }
+
+        h3.profile-name {
+            text-align: center;
+            color : white;
+            /* color: black; */
+            font-size: 30px;
+
+        }
+
+        p.profession {
+            text-align: center;
+            font-size: 20px;
+            color : white;
+            /* color: black; */
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .social {
+            margin: 20px 0px;
+            text-align: center;
+        }
+
+        .social a {
+            background: white;
+            color: #25283a;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin: 0px 5px;
+            transition: 0.3s;
+            box-shadow: 2px 2px 5px rgb(28 115 214 / 20%);
+        }
+
+        .facebook:hover {
+            color: white;
+            background: #386ad4;
+        }
+
+        .instagram:hover {
+            color: white;
+            /* background: linear-gradient(to top right, #feda77, #f58529, #dd217b, #8134af, #515bd4); */
+            background: linear-gradient(to top right, #f58529, #dd217b, #8134af);
+        }
+
+        .twitter:hover {
+            color: white;
+            background: #1DA1F2;
+        }
+
+        .whatsapp:hover {
+            color: white;
+            background: #13ca29;
+        }
+
+        .github:hover {
+            color: white;
+            background: black;
+        }
+
+        .contact {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            background: white;
+            padding: 7px 15px;
+            display: inline-block;
+            border-radius: 3px;
+            color: #25283a;
+            font-weight: 500;
+            box-shadow: 2px 2px 5px rgb(28 115 214 / 20%);
+            transition: 0.3s;
+        }
+
+        a.message {
+            color: black;
+            /* background: #1b62c3; */
+            background: white;
+            margin-right: 10px;
+        }
+
+        a.message:hover {
+            background: rgb(128, 0, 255);
+            color: white;
+        }
+
+        a.subscribe:hover {
+            background: rgb(128, 0, 255);
+            color: white;
+        }
+
+        .achivement {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* .react,
+        .share,
+        .comment {
+            text-align: center;
+            color: #25283a;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .three-dots {
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            right: 0;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .three-dots i {
+            color: #25283a;
+        }
+
+        .arrow {
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            left: 0;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .arrow i {
+            color: #25283a;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div id="profile-card">
+        <div class="profile-image">
+            <!-- <img src="https://img.freepik.com/free-vector/cute-macaw-cartoon-sitting-branch_96037-439.jpg?w=1060&t=st=1674670923~exp=1674671523~hmac=efd3cfa4edffe516ae6fed4f6cf66fcbde6a5174a44719df1ffc66682c1408b7"
+                alt=""> -->
+                <img src="my1.jpeg" alt=""></img>
+        </div>
+        <br>
+        <h3 class="profile-name">Prajwal Mandlik</h3>
+        <br>
+        <p class="profession">Web Developer | Designer</p>
+        <br>
+        <div class="social">
+            <a href="https://github.com/prajwalmandlik2004" target="_blank" class="github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prajwal-mandlik-5962b222a" target="_blank" class="facebook">
+                <!-- <i class="fab fa-facebook-f"></i> -->
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?i=4xte4wg3bts0&utm_content=n9ljg01" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/MandlikPrajwal3?t=itt1AN0k20dE3f6psAXRqw&s=09" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <!-- <i class="fab fa-telegram-plane"></i> -->
+            </a>
+
+        </div>
+        <br>
+        <div class="contact">
+            <a target="_blank" href="https://www.instagram.com/invites/contact/?i=4xte4wg3bts0&utm_content=n9ljg01" class="message">Message</a>
+            <a target="_blank" href="https://www.instagram.com/invites/contact/?i=4xte4wg3bts0&utm_content=n9ljg01" class="subscribe">Follow</a>
+        </div>
+        <!-- <div class="achivement">
+            <div class="react">
+                <i class="fas fa-heart"></i>
+                <p>12.4k</p>
+            </div>
+            <div class="comment">
+                <i class="fas fa-comment"></i>
+                <p>1.7k</p>
+            </div>
+            <div class="share">
+                <i class="fas fa-share"></i>
+                <p>507</p>
+            </div>
+        </div> -->
+        <!-- <div class="three-dots">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="arrow">
+            <i class="fas fa-arrow-left"></i>
+        </div> -->
+    </div>
+
+</body>
+
+</html>
